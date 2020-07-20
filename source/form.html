@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
- <head>
+<head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
@@ -61,8 +61,7 @@
       <header class="intro__header"></header>
 
       <div class="intro__wrapper">
-        <h2 class="intro__title">
-          Оставьте свой отзыв
+        <h2 class="intro__title">Оставьте свой отзыв
         </h2>
         <p class="intro__text">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
@@ -70,8 +69,72 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="section-form">
+      <h2 class="visually-hidden">Оставьте информацию о вашей поездке</h2>
 
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="form__fieldset-username">
+          <legend class="form__legend">представьтесь:</legend>
+          <div class="input-name-box">
+            <label class="input-name-label" for="name">имя*:</label>
+            <input class="input-name" id="name" type="text" placeholder="Пётр">
+          </div>
+          <div class="input-name-box">
+            <label class="input-name-label" for="family">фамилия*:</label>
+            <input class="input-name" id="family" type="text" placeholder="Иванов">
+          </div>
+          <div class="input-name-box">
+            <label class="input-name-label" for="patronymic">отчество*:</label>
+            <input class="input-name" id="patronymic" type="text" placeholder="Александрович">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset-contacts">
+          <legend class="form__legend">контактная информация:</legend>
+          <label class="input-contacts-label" for="tel">контактный телефон*:</label>
+          <div class="input-contacts-box">
+            <input class="input-contacts" id="tel" type="tel" placeholder="Введите телефон">
+          </div>
+          <label class="input-contacts-label" for="mail">Электронная почта*:</label>
+          <div class="input-contacts-box">
+            <input class="input-contacts" id="mail" type="email" placeholder="Введите e-mail">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset-radio">
+          <legend class="form__legend">ваше общее впечатление:</legend>
+          <ul>
+            <li><label tabindex="0"><input type="radio" name="radio"><span class="radio-indicator"></span>Скорее положительное</label></li>
+            <li><label tabindex="0"><input type="radio" name="radio"><span class="radio-indicator"></span>Скорее отрицательное</label></li>
+            <li><label tabindex="0"><input type="radio" name="radio"><span class="radio-indicator"></span>Затрудняюсь ответить</label></li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset-checkbox">
+          <legend class="form__legend">посещенные достопримечательности:</legend>
+          <ul>
+            <li><label tabindex="0">
+                <input type="checkbox"><span class="chekbox-indicator"></span>
+                Мост Дьявола</label>
+            </li>
+            <li><label tabindex="0"><input type="checkbox"><span class="chekbox-indicator"></span>Гора-Колокол</label>
+            </li>
+            <li><label tabindex="0"><input type="checkbox"><span class="chekbox-indicator"></span>Слайд-парк</label>
+            </li>
+            <li><label tabindex="0"><input type="checkbox"><span class="chekbox-indicator"></span>Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset-textarea">
+          <legend class="form__legend">опишите свои эмоции:</legend>
+          <textarea class="letter-text" placeholder="Опишите подробно все свои восторги "></textarea>
+        </fieldset>
+
+        <button class="form__batton" type="submit">отправить отзыв</button>
+
+      </form>
     </section>
 
   </main>
