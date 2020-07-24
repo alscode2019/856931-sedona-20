@@ -1,1 +1,76 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'),
+    url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
+
+  font-weight: 400;
+  font-style: normal;
+  font-dysplay: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+    url('../fonts/ptsansbold.woff2') format('woff2'),
+    url('../fonts/ptsansbold.woff') format('woff');
+
+  font-weight: 700;
+  font-style: normal;
+  font-dysplay: swap;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+*::before {
+  content: " ";
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@import "page-header.less";
+@import "main-nav.less";
+@import "intro.less";
+@import "advantages.less";
+@import "advantages-others.less";
+@import "search.less";
+@import "map.less";
+@import "page-footer.less";
+@import "photo.less";
+@import "video-presentation.less";
