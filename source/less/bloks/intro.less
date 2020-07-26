@@ -1,0 +1,51 @@
+.intro {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.intro--main {
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 320px;
+    height: 37px;
+
+    background-image: url(../img/svg/bg-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -15px;
+    transform: translateX(-50%)
+  }
+}
+
+.intro__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.intro__page {
+  border-bottom: solid 1px #E5E5E5;
+  padding-bottom: 25px;
+}
+
+.intro__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  padding-bottom: 30px;
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
