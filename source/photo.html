@@ -13,66 +13,71 @@
 
     <nav class="main-nav">
 
-      <div class="main-nav__wrapper">
+      <ul class="site-list">
 
-        <ul class="site-list">
 
-          <li class="site-list__item site-list__item--active">
-            <a>
-              Главная
-            </a>
-            <button class="main-nav__close " type="button"><span class="visually-hidden">Закрыть</span></button>
-          </li>
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html">
+            Главная
+          </a>
+          <button class="main-nav__close " type="button"><span class="visually-hidden">Закрыть</span></button>
+        </li>
 
-          <li class="site-list__item">
-            <a href="photo.html">
-              Фото и видео
-            </a>
-          </li>
+      
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фото и видео
+          </a>
+        </li>
 
-          <li class="site-list__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
 
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
 
+      <div class="page-header__menu">
         <a href="index.html" class="page-header__logo">
           <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
         </a>
+
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
-
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
     </nav>
-    <div class="page-header__title">
-      <img src="./img/svg/SEDONA.svg" width="230" height="40" alt="Sedona">
-    </div>
+
+
   </header>
 
   <main class="page-main">
 
     <h1 class="visually-hidden">Фото и видео города Седона</h1>
 
+
+    <div class="page-main__header">
+      <img src="./img/svg/SEDONA.svg" width="230" height="40" alt="Sedona">
+    </div>
+
     <section class="intro intro__page">
-      <header class="intro__header">
-        <div class="intro__wrapper">
-          <h2 class="intro__title">
-            Фото и видео
-          </h2>
-          <p class="intro__text">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-          </p>
-        </div>
-      </header>
+
+      <div class="intro__wrapper">
+        <h2 class="intro__title">
+          Фото и видео
+        </h2>
+        <p class="intro__text">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </div>
+
+
     </section>
 
     <section class="photo">
@@ -139,7 +144,9 @@
         <h3 class="video-presentation__title">Все еще сомневаетесь?</h3>
         <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
-      <video width="320" height="201" controls="controls" poster="./img/video-mobile.jpg">
+
+      <video class="video" width="320" height="201" controls="controls" poster="./img/video-mobile.jpg">
+    
       </video>
     </section>
   </main>
@@ -148,23 +155,23 @@
       <p class="page-footer__hashtag">
         <b>#visitsedona</b>
       </p>
-      <div class="page-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img src="./img/svg/icon-twitter.svg" alt="Мы в твиттере"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="./img/svg/icon-facebook.svg" alt="Мы в фейсбуке"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/watch?time_continue=68&v=-pjw1_GucsA&feature=emb_logo"><img src="./img/svg/icon-youtube.svg" alt="Мы на Ютуб"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/logo-htmlacademy.svg" alt="HTML academy"></a>
-      </div>
+      <ul class="social page-footer__social-list">
+        <li class="social-item">
+          <a class="social-link social-link--tvitter" href="https://vk.com/htmlacademy"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link--youtube" href="https://www.youtube.com/watch?time_continue=68&v=-pjw1_GucsA&feature=emb_logo"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/logo-htmlacademy.svg" alt="HTML academy"></a>
+
+    
     </div>
   </footer>
 </body>
