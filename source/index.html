@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,52 +7,55 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page">
 
   <header class="page-header">
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="site-list">
-          <li class="site-list__item">
-            <a>
-              Главная
-            </a>
-            <button class="main-nav__close " type="button"><span class="visually-hidden">Закрыть</span></button>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+      <ul class="site-list">
+        <li class="site-list__item">
+          <a>
+            Главная
+          </a>
+          <button class="main-nav__close " type="button"><span class="visually-hidden">Закрыть</span></button>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+      <div class="page-header__menu">
         <a href="index.html" class="page-header__logo">
           <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
         </a>
-      </div>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </nav>
 
-    <div class="page-header__title page-header__title--main">
-      <img src="./img/svg/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в великолепие">
-    </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+    </nav>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Сайт поиска гостиниц в городе Седона</h1>
-    <section class="intro">
 
+    <div class="page-main__header page-main__header--index">
+      <div class="page-main__img-text-wrapper">
+        <img src="./img/svg/text-sedona-index.svg" width="460" height="351" alt="Добро пожаловать в великолепие">
+      </div>
+    </div>
+
+    <section class="intro intro--main">
       <div class="intro__wrapper">
         <h2 class="intro__title">
           седона — небольшой &nbsp; городок в аризоне, заслуживающий большего!
@@ -62,17 +65,21 @@
         </p>
       </div>
     </section>
+
     <section class="advantages">
-      <header class="advantages-header">
-        <div class="advantages-header__wrapper">
-          <h2 class="advantages-header__title">настоящий городок</h2>
-          <div class="advantages__number">&mdash; №1 &mdash;</div>
-          <p class="advantages-header__description">седона не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="advantages__page">
+        <div class="advantages-header">
+          <div class="advantages-header__wrapper">
+            <h2 class="advantages-header__title">настоящий городок</h2>
+            <div class="advantages__number">&mdash; №1 &mdash;</div>
+            <p class="advantages-header__description">седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
         </div>
-      </header>
-      <div class="advantages__img-wrapper">
-        <img src="./img/photo-city@1x%201.jpg" width="320" height="260" alt="Фото города Седона">
+        <div class="advantages__img-wrapper">
+          <img class="advantages__img" src="./img/photo-city@1x%201.jpg" width="320" height="260" alt="Фото города Седона">
+        </div>
       </div>
+
       <div class="advantages__wrapper">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--house">
@@ -89,70 +96,79 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="advantages">
-      <header class="advantages-header">
-        <div class="advantages-header__wrapper">
-          <h2 class="advantages-header__title">там есть мост дьявола</h2>
-          <div class="advantages__number">&mdash; №2 &mdash; </div>
-          <p class="advantages-header__description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+
+      <div class="advantages__page">
+        <div class="advantages-header">
+          <div class="advantages-header__wrapper">
+            <h2 class="advantages-header__title">там есть мост дьявола</h2>
+            <div class="advantages__number">&mdash; №2 &mdash; </div>
+            <p class="advantages-header__description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+          </div>
+
         </div>
-      </header>
-      <div class="advantages__img-wrapper">
-        <img class="advantages__img" src="./img/photo-bridge@1x%201.jpg" width="320" height="260" alt="Фото моста дьявола">
+        <div class="advantages__img-wrapper">
+          <img class="advantages__img" src="./img/photo-bridge@1x%201.jpg" width="320" height="260" alt="Фото моста дьявола">
+        </div>
+      </div>
+
+      <div class="advantages-others">
+
+        <div class="advantages__wrapper advantages-others__wrapper">
+
+          <ul class="advantages__list">
+            <li class="advantages-others__item">
+              <h3 class="advantages__title">небольшая площадь</h3>
+              <div class="advantages__number">&mdash; №3 &mdash;</div>
+              <p class="advantages__description">все интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages-others__item">
+              <h3 class="advantages__title">красивая дорога</h3>
+              <div class="advantages__number">&mdash; №4 &mdash;</div>
+              <p class="advantages__description">ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages-others__item">
+              <h3 class="advantages__title">мало туристов&nbsp;</h3>
+              <div class="advantages__number">&mdash; №5 &mdash;</div>
+              <p class="advantages__description">большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="advantages-others">
-      <div class="advantages-others__wrapper">
-        <ul class="advantages-others__list">
-          <li class="advantages-others__item">
-            <h3 class="advantages__title">небольшая площадь</h3>
-            <div class="advantages__number">&mdash; №3 &mdash;</div>
-            <p class="advantages__description">все интересные места находятся очень близко</p>
-          </li>
-          <li class="advantages-others__item">
-            <h3 class="advantages__title">красивая дорога</h3>
-            <div class="advantages__number">&mdash; №4 &mdash;</div>
-            <p class="advantages__description">ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages-others__item">
-            <h3 class="advantages__title">мало туристов</h3>
-            <div class="advantages__number">&mdash; №5 &mdash;</div>
-            <p class="advantages__description">большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+
     <section class="search">
       <div class="search__wrapper">
         <h2 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#" class="search__link">найти гостиницу</a>
+        <a href="#" class=" button search__link">найти гостиницу</a>
       </div>
     </section>
+
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050596647!2d-111.83015794235064!3d34.85437338104802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1595167482153!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050596647!2d-111.83015794235064!3d34.85437338104802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1595167482153!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
+
   </main>
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <p class="page-footer__hashtag">
         <b>#visitsedona</b>
       </p>
-      <div class="page-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img src="./img/svg/icon-twitter.svg" alt="Мы в твиттере"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="./img/svg/icon-facebook.svg" alt="Мы в фейсбуке"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/watch?time_continue=68&v=-pjw1_GucsA&feature=emb_logo"><img src="./img/svg/icon-youtube.svg" alt="Мы на Ютуб"></a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="social page-footer__social-list">
+        <li class="social-item">
+          <a class="social-link social-link--tvitter" href="https://vk.com/htmlacademy"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link--youtube" href="https://www.youtube.com/watch?time_continue=68&v=-pjw1_GucsA&feature=emb_logo"></a>
+        </li>
+      </ul>
+
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/logo-htmlacademy.svg" alt="HTML academy"></a>

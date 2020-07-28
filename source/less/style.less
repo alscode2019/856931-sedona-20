@@ -20,10 +20,13 @@
   font-dysplay: swap;
 }
 
-body {
+.page {
   background-color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+
+  padding: 0;
+  margin: 0;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -56,21 +59,38 @@ p {
   padding: 0;
 }
 
-*::before {
-  content: " ";
-  position: absolute;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+img {
+  width: 100%;
+  /*  height: auto; */
 }
 
-@import "page-header.less";
-@import "main-nav.less";
-@import "intro.less";
-@import "advantages.less";
-@import "advantages-others.less";
-@import "search.less";
-@import "map.less";
-@import "page-footer.less";
-@import "photo.less";
-@import "video-presentation.less";
+.button {
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #81B3D2;
+  text-decoration: none;
+  border: none;
+
+  width: 100%;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@import "./bloks/page-header.less";
+@import "./bloks/main-nav.less";
+@import "./bloks/page-main.less";
+@import "./bloks/intro.less";
+@import "./bloks/advantages.less";
+@import "./bloks/advantages-others.less";
+@import "./bloks/search.less";
+@import "./bloks/map.less";
+@import "./bloks/page-footer.less";
+@import "./bloks/photo.less";
+@import "./bloks/video-presentation.less";
+@import "./bloks/form.less";
