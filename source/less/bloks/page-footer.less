@@ -2,11 +2,24 @@
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: 768px) {
+    padding: 35px 45px;
+  }
 }
 
 .page-footer__wrapper {
   width: 150px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+  }
 }
 
 .page-footer__hashtag {
@@ -14,12 +27,20 @@
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .page-footer__social-list {
   margin-bottom: 40px;
   width: 150px;
   height: 48px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 
@@ -27,6 +48,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    width: 150px;
+  }
 }
 
 .social-link {
@@ -81,4 +106,5 @@
 
   font-size: 14px;
   font-weight: 400;
+
 }

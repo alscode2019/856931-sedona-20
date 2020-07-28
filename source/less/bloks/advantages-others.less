@@ -1,26 +1,40 @@
 .advantages-others {
   background-color: #EEEEEE;
   text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 50px 0px;
+  }
 }
 
 .advantages-others__wrapper {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 .advantages-others__item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin: 0 auto;
+  text-align: center;
   border-bottom: solid 1px #D6D6D6;
+
+  @media (min-width: 768px) {
+
+    width: 140px;
+    border: none;
+  }
 
   &:last-child {
     border-bottom: none;
   }
 
   & p {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     width: 250px;
+
+    @media (min-width: 768px) {
+      width: 140px;
+    }
   }
+
 }
