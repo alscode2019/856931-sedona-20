@@ -10,6 +10,11 @@
 <body class="page">
 
   <header class="page-header">
+
+    <a href="index.html" class="page-header__logo">
+      <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
+    </a>
+
     <nav class="main-nav">
 
       <ul class="site-list">
@@ -17,7 +22,7 @@
           <a>
             Главная
           </a>
-          <button class="main-nav__close " type="button"><span class="visually-hidden">Закрыть</span></button>
+
         </li>
         <li class="site-list__item">
           <a href="photo.html">
@@ -35,24 +40,17 @@
           </a>
         </li>
       </ul>
-      <div class="page-header__menu">
 
 
-        <a href="index.html" class="page-header__logo">
-          <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
-        </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
 
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
     </nav>
-
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Сайт поиска гостиниц в городе Седона</h1>
-
 
     <div class="page-main__header page-main__header--index">
       <div class="page-main__img-text-wrapper">
@@ -61,8 +59,7 @@
     </div>
 
     <section class="intro intro--main">
-
-          <div class="intro__wrapper">
+      <div class="intro__wrapper">
         <h2 class="intro__title">
           седона — небольшой &nbsp; городок в аризоне, заслуживающий большего!
         </h2>
@@ -73,7 +70,6 @@
     </section>
 
     <section class="advantages">
-
       <div class="advantages__page">
         <div class="advantages-header">
           <div class="advantages-header__wrapper">
@@ -82,8 +78,12 @@
             <p class="advantages-header__description">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
         </div>
-        <div class="advantages__img-wrapper">
-          <img class="advantages__img" src="./img/photo-city@1x%201.jpg" width="320" height="260" alt="Фото города Седона">
+        <div class="advantages__img-wrapper advantages__img-wrapper--first">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg" />
+            <source media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.jpg" />
+            <img class="advantages__img" src="./img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
+          </picture>
         </div>
       </div>
 
@@ -114,7 +114,11 @@
 
         </div>
         <div class="advantages__img-wrapper">
-          <img class="advantages__img" src="./img/photo-bridge@1x%201.jpg" width="320" height="260" alt="Фото моста дьявола">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.jpg" />
+            <source media="(min-width: 1200px)" srcset="./img/main-bridge-desktop@1x.jpg" />
+            <img class="advantages__img" src="./img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста дьявола">
+          </picture>
         </div>
       </div>
 
@@ -140,8 +144,7 @@
             </li>
           </ul>
         </div>
-
-    </div>
+      </div>
     </section>
 
     <section class="search">
@@ -165,7 +168,6 @@
         <b>#visitsedona</b>
       </p>
 
-
       <ul class="social page-footer__social-list">
         <li class="social-item">
           <a class="social-link social-link--tvitter" href="https://vk.com/htmlacademy"></a>
@@ -178,7 +180,6 @@
         </li>
       </ul>
 
-
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/logo-htmlacademy.svg" alt="HTML academy"></a>
@@ -186,3 +187,4 @@
     </div>
   </footer>
 </body></html>
+

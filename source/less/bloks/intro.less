@@ -40,9 +40,13 @@
   }
 }
 
-.intro__page {
+.intro--page {
   border-bottom: solid 1px #E5E5E5;
   padding-bottom: 25px;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
 }
 
 .intro__title {
@@ -51,6 +55,17 @@
   font-weight: 700;
 
   padding-bottom: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+
+}
+
+
+
+.intro__title--page {
+  font-size: 30px;
 }
 
 .intro__text {
@@ -59,3 +74,4 @@
   font-weight: 400;
   color: #333333;
 }
+
