@@ -90,21 +90,28 @@
           </fieldset>
         </div>
 
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--contacts">
           <fieldset class=" form__fieldset">
             <legend class="form__legend">контактная информация:</legend>
-            <label class="form__input-label" for="tel">контактный телефон*:</label>
-            <div class="form__input-box form__input-box--contacts">
-              <input class="form__input" id="tel" type="tel" placeholder="Введите телефон">
+
+            <div class="form__contact-box">
+              <div class="form__input-box form__input-box--tel">
+                <label class="form__input-label form__input-label--tel" for="tel">контактный телефон*:</label>
+                <label class="form__input-label form__input-label-desktop--tel" for="tel">телефон*:</label>
+                <input class="form__input form__input--tel" id="tel" type="tel" placeholder="Введите телефон">
+              </div>
+
+              <div class="form__input-box form__input-box--mail">
+                <label class="form__input-label form__input-label--contacts" for="mail">электронная почта: </label>
+
+                <input class="form__input form__input--mail" id="mail" type="email" placeholder="Введите e-mail">
+              </div>
             </div>
-            <label class="form__input-label form__input-label--contacts" for="mail">Электронная почта*:</label>
-            <div class="form__input-box form__input-box--contacts">
-              <input class="form__input" id="mail" type="email" placeholder="Введите e-mail">
-            </div>
+
           </fieldset>
         </div>
 
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--radio">
           <fieldset class=" form__fieldset form__fieldset--radio">
             <legend class="form__legend">ваше общее впечатление:</legend>
             <ul class="form__list">
@@ -115,10 +122,10 @@
           </fieldset>
         </div>
 
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--checkbox">
           <fieldset class=" form__fieldset form__fieldset--checkbox">
-            <legend class="form__legend">посещенные достопримечательности:</legend>
-            <ul class="form__list">
+            <legend class="form__legend form__legend--checkbox">посещенные достопримечательности:</legend>
+            <ul class="form__list form__list--checkbox">
               <li class="form__item"><label class="form__checkbox-label" tabindex="0">
                   <input class="form__checkbox-input" type="checkbox"><span class="chekbox-indicator"></span>
                   Мост Дьявола</label>
@@ -133,17 +140,20 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__fieldset form__fieldset--textarea">
-          <legend class="form__legend">опишите свои эмоции:</legend>
-          <div class="form__textarea-wrapper">
+        <div class="form__wrapper form__wrapper--fieldset">
+          <fieldset class="form__fieldset form__fieldset--textarea">
+            <legend class="form__legend">опишите свои эмоции:</legend>
+
             <textarea class="letter-text" placeholder="Опишите подробно все свои восторги "></textarea>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
         <div class="form__button-wrapper">
           <button class="button form__button" type="submit">отправить отзыв</button>
         </div>
-
+        <p class="form__notification">
+          * — обязательные поля
+        </p>
 
       </form>
     </section>
