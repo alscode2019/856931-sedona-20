@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -11,10 +12,13 @@
   <header class="page-header">
 
     <a href="index.html" class="page-header__logo">
-      <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/svg/logotype-desktop.svg" />
+        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
+      </picture>
     </a>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
 
       <ul class="site-list">
         <li class="site-list__item">
@@ -28,8 +32,8 @@
             Фото и видео
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html">
+        <li class="site-list__item site-list__item--active">
+          <a>
             Форма отзыва
           </a>
         </li>
@@ -184,6 +188,7 @@
       </div>
     </div>
   </footer>
-
+  <!-- подключаем скрипты -->
+  <script type="text/javascript" src="./js/mobail-menu.js"></script>
 </body></html>
 
