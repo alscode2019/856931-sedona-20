@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -10,48 +11,44 @@
 <body>
   <header class="page-header">
 
-    <nav class="main-nav">
+    <a href="index.html" class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/svg/logotype-desktop.svg" />
+        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
+      </picture>
+    </a>
 
-      <div class="main-nav__wrapper">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
 
-        <ul class="site-list">
-
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-            <button class="main-nav__close " type="button"><span class="visually-hidden">Закрыть</span></button>
-          </li>
-
-          <li class="site-list__item">
-            <a href="photo.html">
-              Фото и видео
-            </a>
-          </li>
-
-          <li class="site-list__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-
-        <div class="page-header__menu">
-          <a href="index.html" class="page-header__logo">
-            <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
+      <ul class="site-list">
+        <li class="site-list__item">
+          <a href="index.html">
+            Главная
           </a>
 
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-      </div>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+
+
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
     </nav>
   </header>
 
@@ -97,21 +94,28 @@
           </fieldset>
         </div>
 
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--contacts">
           <fieldset class=" form__fieldset">
             <legend class="form__legend">контактная информация:</legend>
-            <label class="form__input-label" for="tel">контактный телефон*:</label>
-            <div class="form__input-box form__input-box--contacts">
-              <input class="form__input" id="tel" type="tel" placeholder="Введите телефон">
+
+            <div class="form__contact-box">
+              <div class="form__input-box form__input-box--tel">
+                <label class="form__input-label form__input-label--tel" for="tel">контактный телефон*:</label>
+                <label class="form__input-label form__input-label-desktop--tel" for="tel">телефон*:</label>
+                <input class="form__input form__input--tel" id="tel" type="tel" placeholder="Введите телефон">
+              </div>
+
+              <div class="form__input-box form__input-box--mail">
+                <label class="form__input-label form__input-label--contacts" for="mail">электронная почта: </label>
+
+                <input class="form__input form__input--mail" id="mail" type="email" placeholder="Введите e-mail">
+              </div>
             </div>
-            <label class="form__input-label form__input-label--contacts" for="mail">Электронная почта*:</label>
-            <div class="form__input-box form__input-box--contacts">
-              <input class="form__input" id="mail" type="email" placeholder="Введите e-mail">
-            </div>
+
           </fieldset>
         </div>
 
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--radio">
           <fieldset class=" form__fieldset form__fieldset--radio">
             <legend class="form__legend">ваше общее впечатление:</legend>
             <ul class="form__list">
@@ -122,10 +126,10 @@
           </fieldset>
         </div>
 
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--checkbox">
           <fieldset class=" form__fieldset form__fieldset--checkbox">
-            <legend class="form__legend">посещенные достопримечательности:</legend>
-            <ul class="form__list">
+            <legend class="form__legend form__legend--checkbox">посещенные достопримечательности:</legend>
+            <ul class="form__list form__list--checkbox">
               <li class="form__item"><label class="form__checkbox-label" tabindex="0">
                   <input class="form__checkbox-input" type="checkbox"><span class="chekbox-indicator"></span>
                   Мост Дьявола</label>
@@ -140,17 +144,20 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__fieldset form__fieldset--textarea">
-          <legend class="form__legend">опишите свои эмоции:</legend>
-          <div class="form__textarea-wrapper">
+        <div class="form__wrapper form__wrapper--fieldset">
+          <fieldset class="form__fieldset form__fieldset--textarea">
+            <legend class="form__legend">опишите свои эмоции:</legend>
+
             <textarea class="letter-text" placeholder="Опишите подробно все свои восторги "></textarea>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
         <div class="form__button-wrapper">
           <button class="button form__button" type="submit">отправить отзыв</button>
         </div>
-
+        <p class="form__notification">
+          * — обязательные поля
+        </p>
 
       </form>
     </section>
@@ -162,7 +169,6 @@
       <p class="page-footer__hashtag">
         <b>#visitsedona</b>
       </p>
-
 
       <ul class="social page-footer__social-list">
         <li class="social-item">
@@ -176,12 +182,13 @@
         </li>
       </ul>
 
-
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/logo-htmlacademy.svg" alt="HTML academy"></a>
       </div>
     </div>
   </footer>
-
+  <!-- подключаем скрипты -->
+  <script type="text/javascript" src="./js/mobail-menu.js"></script>
 </body></html>
+

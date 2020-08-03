@@ -1,15 +1,19 @@
-.page-header__menu {
-  height: 60px;
-  width: 100%;
+.page-header {
+  position: relative;
+
+  padding-bottom: 60px;
 
   @media (min-width: 768px) {
-    height: 0;
+    padding-bottom: 0;
   }
 }
 
+
 .page-header__logo {
   position: absolute;
-  bottom: 16px;
+  bottom: 18px;
+  left: 50%;
+  margin-right: -50%;
   transform: translate(-50%, 50%);
   z-index: 90;
 }
