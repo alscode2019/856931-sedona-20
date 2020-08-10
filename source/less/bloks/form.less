@@ -336,7 +336,7 @@ textarea.letter-text::placeholder {
 
 .form__item {
   margin-bottom: 36px;
-  padding-left: 3px;
+  /* padding-left: 3px; */
 
   &:last-child {
     margin-bottom: 0;
@@ -404,6 +404,14 @@ textarea.letter-text::placeholder {
     background-color: #F2F2F2;
     left: 0;
   }
+}
+
+.form__radio-label {
+
+  &::before {
+    border-radius: 50%;
+  }
+
 }
 
 @media (min-width: 768px) {
