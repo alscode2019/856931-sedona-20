@@ -7,14 +7,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* min-height: 157px; */
   width: 100%;
 
   background-image: url(../img/back-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* min-height: 157px; */
-
   background-color: #81B3D3;
 
 
@@ -27,26 +24,24 @@
     height: 58px;
     width: 100%;
     background-image: url(../img/svg/bg-intro-triangle-mobile.svg);
-    bottom: 0px;
+    bottom: -1px;
     left: 50%;
     margin-right: -50%;
     transform: translateX(-50%);
   }
 
   @media (min-width: 768px) {
-    /* background-image: url(../img/bg-back-tablet@1x.jpg); */
     min-height: 290px;
     align-items: flex-start;
     padding-top: 77px;
 
     &::after {
       background-image: url(../img/svg/bg-intro-triangle-tablet.svg);
-      bottom: 0px;
     }
   }
 
   @media (min-width: 1200px) {
-    /* background-image: url(../img/bg-back-desktop@1x.jpg); */
+
     padding-top: 85px;
     min-height: 300px;
 
@@ -60,7 +55,7 @@
   background-image: url(../img/back-mobile.jpg);
   align-items: center;
 
-  min-height: 388px;
+  min-height: 387px;
 
   @media (min-width: 768px) {
     background-image: url(../img/bg-back-tablet@1x.jpg);
