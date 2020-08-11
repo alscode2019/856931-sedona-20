@@ -14,41 +14,90 @@
 .advantages-header {
   background-color: #81B3D2;
   color: #ffffff;
-  font-size: 13px;
-  padding-bottom: 30px;
-  padding-top: 40px;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 50px 12px;
   text-align: center;
+  padding-bottom: 38px;
+
+  @media (min-width: 768px) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 46px;
+  }
 }
 
+.advantages-header--two {
+  padding-top: 38px;
+
+
+  @media (min-width: 768px) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 50px;
+  }
+}
+
+
 .advantages-header__wrapper {
-  max-width: 295px;
+  width: 100%;
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    max-width: 192px;
+    padding: 0 10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 45px;
   }
 }
+
+@media (min-width: 1200px) {
+  .advantages-header__wrapper--two {
+    padding: 0 70px;
+  }
+}
+
+
 
 .advantages-header__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 
-  padding-bottom: 20px;
+  margin-bottom: 12px;
+
+  @media (max-width: 767px) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    margin-bottom: 13px;
+  }
 }
 
 .advantages__number {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 23px;
+  }
 }
 
 
-.advantages__img-wrapper {
-  height: 260px;
-
+.advantages__img {
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
-  .advantages__img-wrapper--two {
+  .advantages__page-picture--two {
     order: -1;
   }
 }
@@ -65,36 +114,35 @@
 }
 
 .advantages__list {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-top: 34px;
+  padding-bottom: 10px;
 
 
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 180px 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-    padding-bottom: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    align-items: center;
+    padding-bottom: 59px;
+    padding-top: 159px;
   }
 
   @media (min-width: 1200px) {
-    grid-template-columns: 300px 300px 300px;
+    padding-top: 156px;
+    padding-bottom: 81px;
+
   }
 
 }
 
 .advantages__item {
-  padding-top: 30px;
+  margin-bottom: 25px;
 
   @media (min-width: 768px) {
     margin: 0 auto;
     text-align: center;
-    padding-top: 140px;
-    padding-bottom: 60px;
   }
 }
-
 
 .advantages__item--house,
 .advantages__item--gift,
@@ -102,17 +150,19 @@
   position: relative;
 }
 
+
 .advantages__title {
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: 768px) {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-  }
 
+    margin-bottom: 24px;
+  }
 }
 
 .advantages__description {
@@ -132,44 +182,67 @@
   width: 40px;
   height: 40px;
   left: -50px;
+  top: 4px;
+  transform: translate(0, -35%);
 
   @media (min-width: 768px) {
-    left: 70px;
-    top: 60px;
-  }
+    /* left: 70px; */
+    top: 0;
+    width: 76px;
+    height: 76px;
 
-  @media (min-width: 1200px) {
-    left: 130px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -130%);
   }
 
 }
 
-
 .advantages__item--house::before {
   background-image: url(../img/svg/icon-house.svg);
-  transform: translate(0, -35%);
 }
 
 .advantages__item--gift::before {
   background-image: url(../img/svg/icon-gift.svg);
 
-  transform: translate(0, -35%);
+  @media (min-width: 768px) {
+    transform: translate(-50%, -146%);
+  }
+
+  @media (min-width: 1200px) {
+    transform: translate(-50%, -130%);
+  }
 }
 
 .advantages__item--burger::before {
   background-image: url(../img/svg/icon-burger.svg);
-
-  transform: translate(0, -25%);
 }
 
-.advantages__item--burger {
-  @media (min-width: 768px) {
+
+@media (min-width: 768px) {
+  .advantages__item--burger {
     order: -1;
+    padding: 0 50px;
+  }
+
+  .advantages__item--house {
+    order: -1;
+    padding: 0 35px;
+  }
+
+  .advantages__item--gift {
+    padding: 0 30px;
   }
 }
 
-.advantages__item--house {
-  @media (min-width: 768px) {
-    order: -1;
+@media (max-width: 768px) {
+  .advantages__item--gift br {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__item--house {
+    padding: 0 45px;
   }
 }

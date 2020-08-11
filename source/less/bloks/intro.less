@@ -1,8 +1,17 @@
 .intro {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 33px;
+  padding-bottom: 35px;
 
+  @media (min-width: 768px) {
+    padding-top: 44px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 54px;
+    padding-bottom: 43px;
+  }
 }
 
 .intro--main {
@@ -11,17 +20,15 @@
   &::after {
     content: " ";
     position: absolute;
-    background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 320px;
-    height: 37px;
+    width: 100%;
+    height: 38px;
 
-    background-image: url(../img/svg/bg-triangle.svg);
-    background-position: center;
+    background-image: url(../img/svg/white-triangle-2.svg);
+    background-position: center bottom;
     background-repeat: no-repeat;
-    bottom: -15px;
-    transform: translateX(-50%)
+    bottom: 3px;
+    transform: translate(-50%, 50%);
   }
 
   @media (min-width: 768px) {
@@ -42,10 +49,26 @@
 
 .intro--page {
   border-bottom: solid 1px #E5E5E5;
-  padding-bottom: 25px;
+  padding: 32px 15px 27px;
 
   @media (min-width: 768px) {
     border: none;
+    padding: 63px 110px 75px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 100px 380px 77px;
+  }
+}
+
+.intro--form-page {
+  @media (min-width: 768px) {
+    border: none;
+    padding: 63px 165px 85px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 113px 380px 58px;
   }
 }
 
@@ -54,18 +77,27 @@
   line-height: 26px;
   font-weight: 700;
 
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
-    font-size: 30px;
-  }
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 32px;
 
+    & br {
+      display: none;
+    }
+  }
 }
 
-
-
 .intro__title--page {
-  font-size: 30px;
+  line-height: 26px;
+  margin-bottom: 27px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
 }
 
 .intro__text {
@@ -73,4 +105,8 @@
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+}
+
+.intro__text--form {
+  line-height: 24px;
 }
