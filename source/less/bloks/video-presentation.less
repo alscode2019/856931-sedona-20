@@ -3,6 +3,10 @@
   padding-top: 33px;
   padding-bottom: 112px;
 
+  @media (min-width: 768px) {
+    padding-bottom: 45px;
+  }
+
   @media (min-width: 1200px) {
     padding: 0 201px;
   }
@@ -12,8 +16,8 @@
   padding: 0 25px 34px;
 
   @media (min-width: 768px) {
-    /* width: 445px; */
-    padding: 57px 95px 79px;
+
+    padding: 24px 95px 79px;
   }
 
   @media (min-width: 1200px) {
@@ -39,17 +43,91 @@
   color: #333333;
 }
 
-.video-pleer {
+.video-player {
   position: relative;
 }
 
-.video-pleer__screen {}
+.video-player__screen {}
 
-.video-pleer__panel {
+
+.video-player__controls-panel {
   position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 0 20px;
+  bottom: -68px;
 
+  @media (min-width: 768px) {
+    bottom: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 20px;
+    padding-right: 26px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 25px;
+  }
 }
 
-.video-pleer__scroll-panel {}
+.video-player__controls-range {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: fade(#000000, 60%);
 
-.video-pleer__control-panel {}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    width: 68%;
+  }
+
+  @media (min-width: 768px) {
+    width: 74%;
+  }
+}
+
+.video-player__range {
+  margin: 0;
+}
+
+.video-player__controls {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding-left: 25px;
+
+  background-color: #F2F2F2;
+
+  @media (min-width: 768px) {
+    height: 93px;
+    padding-left: 0;
+    background-color: transparent;
+
+    & path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.video-player__controls--subtitles {
+  padding-left: 34px;
+
+  @media (min-width: 768px) {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-player__controls--replay {
+    order: -1;
+  }
+}
