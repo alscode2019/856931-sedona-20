@@ -116,9 +116,10 @@
 
   @media (min-width: 768px) {
     padding: 0;
-    border-top: solid 1px #DBDBDB;
+    /*  border-top: solid 1px #DBDBDB; */
   }
 }
+
 
 .form__fieldset--radio,
 .form__fieldset--checkbox {
@@ -156,6 +157,31 @@
 
 
 @media (min-width: 768px) {
+
+  .form__legend--contacts,
+  .form__legend--textarea,
+  .form__legend--checkbox {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 19%;
+      background-color: #DBDBDB;
+      top: 50%;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
   .form__legend--checkbox {
     padding: 0 120px;
     margin-bottom: 44px;
@@ -168,9 +194,22 @@
   .form__legend--textarea {
     margin-bottom: 56px;
   }
+
+
 }
 
 @media (min-width: 1200px) {
+
+  .form__legend--contacts,
+  .form__legend--textarea,
+  .form__legend--checkbox {
+
+    &::before,
+    &::after {
+      width: 29%;
+    }
+  }
+
   .form__legend--contacts {
     margin-bottom: 72px;
   }
