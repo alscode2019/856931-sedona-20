@@ -36,6 +36,7 @@ body {
 
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -103,6 +104,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color: #669EC0;
+  }
+
+  &:active {
+    background-color: #5496BD;
+    color: fade(#ffffff, 30%);
+  }
+}
+
+.disabled {
+  background-color: #E5E5E5;
 }
 
 @import "./bloks/page-header.less";
@@ -117,9 +131,13 @@ img {
 @import "./bloks/photo.less";
 @import "./bloks/video-presentation.less";
 @import "./bloks/form.less";
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
 >>>>>>> feaa76f65349ea89af78efdff9d6914d2fde32f7
 =======
 >>>>>>> 3f69df0e2c46e2fe4c5e84310f802cba2c14d6b9
+=======
+@import "./bloks/modal.less";
+>>>>>>> 5d9387f14744b1429b16f329fa4cc97abc1185e4

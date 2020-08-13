@@ -9,11 +9,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="768"
    height="37"
-   viewBox="0 0 320 37"
+   viewBox="0 0 768 37"
    fill="none"
    version="1.1"
    id="svg6"
-   sodipodi:docname="triangle 2.svg"
+   sodipodi:docname="white copy 2.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata12">
@@ -42,24 +42,22 @@
      inkscape:window-height="480"
      id="namedview8"
      showgrid="false"
-     inkscape:pagecheckerboard="false"
-     inkscape:zoom="0.61458333"
-     inkscape:cx="384"
-     inkscape:cy="18.5"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="2.4583333"
+     inkscape:cx="550.97383"
+     inkscape:cy="24.120664"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg6" />
   <path
-     fill-rule="evenodd"
-     clip-rule="evenodd"
-     d="M-225 0H159V37L-225 0Z"
-     fill="white"
-     id="path2" />
+     d="m 1.16949,0 h 384 v 37 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd" />
   <path
-     fill-rule="evenodd"
-     clip-rule="evenodd"
-     d="M543 0H159V37L543 0Z"
-     fill="white"
-     id="path4" />
+     d="m 769.16949,0 h -384 v 37 z"
+     id="path4"
+     inkscape:connector-curvature="0"
+     style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd" />
 </svg>
