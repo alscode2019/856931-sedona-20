@@ -23,9 +23,26 @@
 .site-list__item {
   background-color: #81B3D2;
   height: 56px;
+  position: relative;
 
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+
+  @media (max-width: 320px) {
+    &:last-child {
+      ::after {
+        content: "";
+        position: absolute;
+        height: 7px;
+        width: 100%;
+        bottom: 0;
+
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+      }
+    }
+  }
+
+
 
   &:hover {
     background-color: #669EC0;
@@ -163,7 +180,7 @@
   /* background-image: url(../img/svg/icon-cross.svg);
   background-repeat: no-repeat; */
 
-   &::before,
+  &::before,
   &::after {
     content: "";
     position: absolute;
