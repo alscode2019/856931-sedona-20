@@ -25,7 +25,6 @@ submit.addEventListener('click', function (evt) {
     } // закончился if
     else {
       input.classList.remove("form__input-invalid");
-      filure.classList.remove("modal__show");
     }
 
   } // закончился цикл
