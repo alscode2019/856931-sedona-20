@@ -14,7 +14,7 @@
     <a href="index.html" class="page-header__logo">
       <picture>
         <source media="(min-width: 1200px)" srcset="./img/svg/logotype-desktop.svg" />
-        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
+        <img src="./img/svg/logotyle-mobile.svg" alt="Город Седона" width="102">
       </picture>
     </a>
 
@@ -83,15 +83,15 @@
             <legend class="form__legend">представьтесь:</legend>
             <div class="form__input-box ">
               <label class="form__input-label" for="name">имя*:</label>
-              <input class="form__input  input-name" id="name" type="text" placeholder="Пётр">
+              <input class="form__input  input-name" id="name" type="text" placeholder="Пётр" required>
             </div>
             <div class="form__input-box">
               <label class="form__input-label" for="family">фамилия*:</label>
-              <input class="form__input" id="family" type="text" placeholder="Иванов">
+              <input class="form__input" id="family" type="text" placeholder="Иванов" required>
             </div>
             <div class="form__input-box">
               <label class="form__input-label" for="patronymic">отчество*:</label>
-              <input class="form__input" id="patronymic" type="text" placeholder="Александрович">
+              <input class="form__input" id="patronymic" type="text" placeholder="Александрович" required>
             </div>
           </fieldset>
         </div>
@@ -104,13 +104,13 @@
               <div class="form__input-box form__input-box--tel">
                 <label class="form__input-label form__input-label--contacts-tel" for="tel">контактный телефон*:</label>
                 <label class="form__input-label form__input-label--desktop-tel" for="tel">телефон*:</label>
-                <input class="form__input form__input--tel" id="tel" type="tel" placeholder="Введите телефон">
+                <input class="form__input form__input--tel" id="tel" type="tel" placeholder="Введите телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
               </div>
 
               <div class="form__input-box form__input-box--mail">
                 <label class="form__input-label form__input-label--contacts" for="mail">электронная почта: </label>
 
-                <input class="form__input form__input--mail" id="mail" type="email" placeholder="Введите e-mail">
+                <input class="form__input form__input--mail" id="mail" type="email" placeholder="Введите e-mail" required pattern="\S+@[a-z]+.[a-z]+">
               </div>
             </div>
 
@@ -121,7 +121,7 @@
           <fieldset class=" form__fieldset form__fieldset--radio">
             <legend class="form__legend">ваше общее впечатление:</legend>
             <ul class="form__list">
-              <li class="form__item"><label class="form__radio-label" tabindex="0"><input class="form__radio-input" type="radio" name="radio"><span class="radio-indicator"></span>Скорее положительное</label></li>
+              <li class="form__item"><label class="form__radio-label" tabindex="0"><input class="form__radio-input" type="radio" name="radio" checked><span class="radio-indicator"></span>Скорее положительное</label></li>
               <li class="form__item"><label class="form__radio-label" tabindex="0"><input class="form__radio-input" type="radio" name="radio"><span class="radio-indicator"></span>Скорее отрицательное</label></li>
               <li class="form__item"><label class="form__radio-label" tabindex="0"><input class="form__radio-input" type="radio" name="radio"><span class="radio-indicator"></span>Затрудняюсь ответить</label></li>
             </ul>
@@ -231,10 +231,12 @@
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
     <div class="modal__filure-button-wrapper">
+      <h3 class="visually-hiddeen">Закрыть окно</h3>
       <a href="#" class="button modal__filure-button">ок</a>
     </div>
   </section>
 
   <!-- подключаем скрипты -->
   <script type="text/javascript" src="./js/mobile-menu.js"></script>
+  <script type="text/javascript" src="./js/chek-form.js"></script>
 </body></html>
