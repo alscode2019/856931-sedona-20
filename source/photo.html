@@ -15,7 +15,7 @@
     <a href="index.html" class="page-header__logo">
       <picture class="">
         <source media="(min-width: 1200px)" srcset="./img/svg/logotype-desktop.svg" />
-        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
+        <img src="./img/svg/logotyle-mobile.svg" alt="Город Седона" width="102">
       </picture>
     </a>
 
@@ -85,9 +85,9 @@
             <div class="photo__wrapper">
               <a href="#" class="photo__link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg" />
-                  <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg" />
-                  <img class="photo__img" src="./img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото дорог Седоны">
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x" />
+                  <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Фото дорог Седоны">
                 </picture>
               </a>
               <div class="photo__caption">
@@ -108,9 +108,9 @@
             <div class="photo__wrapper">
               <a href="#" class="photo__link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg" />
-                  <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg" />
-                  <img class="photo__img" src="./img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото местной растительности">
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x" />
+                  <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Фото местной растительности">
                 </picture>
               </a>
               <div class="photo__caption">
@@ -130,9 +130,9 @@
             <div class="photo__wrapper">
               <a href="#" class="photo__link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg" />
-                  <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg" />
-                  <img class="photo__img" src="./img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото дорога на север">
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, photo-roads-desktop@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x" />
+                  <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Фото дорога на север">
                 </picture>
               </a>
               <div class="photo__caption">
@@ -141,7 +141,7 @@
                   <p class="photo__autor">Автор фото: Петр</p>
                 </div>
                 <div class="photo__like-box">
-                  <button class="photo__like"><img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков"></button>
+                  <button class="photo__like"><img src="img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков"></button>
                   <span class="photo__like-amount">96</span>
                 </div>
               </div>
@@ -152,9 +152,9 @@
             <div class="photo__wrapper">
               <a href="#" class="photo__link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/photo-4-desktop.jpg" />
-                  <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.jpg" />
-                  <img class="photo__img" src="./img/photo-bridge-mobile.jpg" width="280" height="280" alt="Фото дорога на север">
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg, img/photo-bridge-desktop@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x" />
+                  <img class="photo__img" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото дорога на север">
                 </picture>
               </a>
               <div class="photo__caption">
@@ -192,7 +192,7 @@
             <li class="video-player__controls-range">
               <input class="video-player__range" type="range">
             </li>
-            <li class="video-player__controls player__controls--replay">
+            <li class="video-player__controls video-player__controls--replay">
               <button class="video-player__button"><svg width="16" height="20" viewbox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z" fill="#5C6870" />
                 </svg></button>
