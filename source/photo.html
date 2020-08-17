@@ -96,7 +96,12 @@
                   <p class="photo__autor">Автор фото: Борис</p>
                 </div>
                 <div class="photo__like-box">
-                  <button class="photo__like"><img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков"></button>
+                  <button class="photo__like">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/svg/icon-like.svg" />
+                      <img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков">
+                    </picture>
+                  </button>
                   <span class="photo__like-amount">1350</span>
                 </div>
               </div>
@@ -119,7 +124,12 @@
                   <p class="photo__autor">Автор фото: Сергей</p>
                 </div>
                 <div class="photo__like-box">
-                  <button class="photo__like"><img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков"></button>
+                  <button class="photo__like">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/svg/icon-like.svg" />
+                      <img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков">
+                    </picture>
+                  </button>
                   <span class="photo__like-amount">143</span>
                 </div>
               </div>
@@ -130,7 +140,7 @@
             <div class="photo__wrapper">
               <a href="#" class="photo__link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, photo-roads-desktop@2x.jpg 2x" />
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x" />
                   <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x" />
                   <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Фото дорога на север">
                 </picture>
@@ -141,7 +151,12 @@
                   <p class="photo__autor">Автор фото: Петр</p>
                 </div>
                 <div class="photo__like-box">
-                  <button class="photo__like"><img src="img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков"></button>
+                  <button class="photo__like">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/svg/icon-like.svg" />
+                      <img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков">
+                    </picture>
+                  </button>
                   <span class="photo__like-amount">96</span>
                 </div>
               </div>
@@ -152,7 +167,7 @@
             <div class="photo__wrapper">
               <a href="#" class="photo__link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg, img/photo-bridge-desktop@2x.jpg 2x" />
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-bridge-desktop@2x.jpg 2x" />
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x" />
                   <img class="photo__img" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото дорога на север">
                 </picture>
@@ -163,7 +178,12 @@
                   <p class="photo__autor">Автор фото: Антон</p>
                 </div>
                 <div class="photo__like-box">
-                  <button class="photo__like"><img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков"></button>
+                  <button class="photo__like">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/svg/icon-like.svg" />
+                      <img src="./img/svg/like-icon.svg" width="23" height="21" alt="Кнопка лайков">
+                    </picture>
+                  </button>
                   <span class="photo__like-amount">254</span>
                 </div>
               </div>
@@ -183,9 +203,9 @@
 
         <div class="video-player">
           <picture class="video-player__screen">
-            <source media="(min-width: 1200px)" srcset="./img/video-desktop.jpg" />
-            <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg" />
-            <img class="video-player__img" src="./img/video-mobile.jpg" width="320" height="201" alt="Видеопрезентация">
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg 2x" />
+            <img class="video-player__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видеопрезентация">
           </picture>
 
           <ul class="video-player__controls-panel">
