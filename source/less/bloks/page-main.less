@@ -13,7 +13,7 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #81B3D3;
+  background-color: #D3B781;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -23,15 +23,16 @@
     content: " ";
     position: absolute;
     background-position: center bottom;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 58px;
+    height: 30px;
     width: 100%;
     background-image: url(../img/svg/bg-intro-triangle-mobile.svg);
-    bottom: -1px;
+    bottom: 0px;
     left: 50%;
     margin-right: -50%;
     transform: translateX(-50%);
+
   }
 
   @media (min-width: 768px) {
@@ -47,6 +48,7 @@
 
     &::after {
       background-image: url(../img/svg/bg-intro-triangle-tablet.svg);
+      height: 57px;
     }
   }
 
@@ -78,7 +80,7 @@
   }
 
   @media (min-width: 768px) {
-    min-height: 518px;
+    min-height: 519px;
     align-items: flex-start;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -101,11 +103,11 @@
 }
 
 .page-main__header-title {
-  padding: 0 20px;
-  padding-top: 5px;
+  /* padding: 0 20px;
+  padding-top: 5px; */
 
   @media (min-width: 768px) {
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 }
 
