@@ -1,14 +1,11 @@
 .page-footer {
   text-align: center;
-}
-
-.page-footer--index {
-  padding-top: 34px;
-  padding-bottom: 30px;
-}
-
-.page-footer--photo {
   padding: 32px 0 30px;
+}
+
+
+.page-footer--form {
+  padding: 74px 0 30px;
 }
 
 
@@ -87,7 +84,7 @@
   }
 }
 
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,10 +99,14 @@
   &:active {
     background-color: #5496BD;
 
-    & path {
+    & .social__link-icon {
       fill: fade(#ffffff, 30%);
     }
   }
+}
+
+.social__link-icon {
+  fill: #ffffff;
 }
 
 .page-footer__copyright {
