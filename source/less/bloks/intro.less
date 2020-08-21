@@ -1,16 +1,16 @@
 .intro {
   text-align: center;
   padding-top: 33px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 
   @media (min-width: 768px) {
-    padding-top: 44px;
+    padding-top: 43px;
     padding-bottom: 51px;
   }
 
   @media (min-width: 1200px) {
     padding-top: 54px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 }
 
@@ -20,14 +20,14 @@
   &::after {
     content: " ";
     position: absolute;
-    background-size: contain;
+    background-size: 100%;
     width: 100%;
-    height: 38px;
+    height: 37px;
 
-    background-image: url(../img/svg/white-triangle-2.svg);
+    background-image: url(../img/svg/white-copy.svg);
     background-position: center bottom;
     background-repeat: no-repeat;
-    bottom: 3px;
+    bottom: 0px;
     transform: translate(-50%, 50%);
   }
 
@@ -39,11 +39,12 @@
 }
 
 .intro__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  padding: 0 6%;
 
   @media (min-width: 768px) {
+    padding: 0;
     width: 520px;
+    margin: 0 auto;
   }
 }
 

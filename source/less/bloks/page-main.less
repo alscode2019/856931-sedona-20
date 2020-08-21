@@ -2,6 +2,7 @@
   width: 100%;
 }
 
+
 .page-main__header {
   position: relative;
   display: flex;
@@ -9,10 +10,10 @@
   justify-content: center;
   width: 100%;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #81B3D3;
+  background-color: #ddebf4;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -24,13 +25,14 @@
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 58px;
+    min-height: 57px;
     width: 100%;
     background-image: url(../img/svg/bg-intro-triangle-mobile.svg);
-    bottom: -1px;
+    bottom: 0px;
     left: 50%;
     margin-right: -50%;
     transform: translateX(-50%);
+
   }
 
   @media (min-width: 768px) {
@@ -46,8 +48,10 @@
 
     &::after {
       background-image: url(../img/svg/bg-intro-triangle-tablet.svg);
+
     }
   }
+
 
   @media (min-width: 1200px) {
 
@@ -67,24 +71,44 @@
 }
 
 .page-main__header--index {
-  background-image: url(../img/back-mobile.jpg);
   align-items: center;
-
   min-height: 389px;
 
+  background-image: url(../img/back-mobile.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @media (min-width: 768px) {
-    /* background-image: url(../img/bg-back-tablet@1x.jpg); */
-    min-height: 518px;
+    min-height: 519px;
     align-items: flex-start;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    @media (min-width: 1200px) {
+
+      padding-top: 77px;
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+      }
+    }
+
   }
 }
 
 .page-main__header-title {
-  padding: 0 20px;
-  padding-top: 5px;
+  /* padding: 0 20px;
+  padding-top: 5px; */
 
   @media (min-width: 768px) {
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 }
 
