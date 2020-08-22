@@ -166,36 +166,27 @@
   cursor: pointer;
   background-color: inherit;
   outline: none;
+  fill: #5C6870;
 
   &:hover {
-    & path {
-      fill: #333333;
-    }
+    fill: #333333;
   }
 
 
   &:active {
-    & path {
-      fill: fade(#333333, 30%);
-    }
+    fill: fade(#333333, 30%);
   }
 
   @media (min-width: 768px) {
 
-    & path {
-      fill: #ffffff;
-    }
+    fill: #ffffff;
 
     &:hover {
-      & path {
-        fill: fade(#ffffff, 60%);
-      }
+      fill: fade(#ffffff, 60%);
     }
 
     &:active {
-      & path {
-        fill: fade(#ffffff, 30%);
-      }
+      fill: fade(#ffffff, 30%);
     }
   }
 }
