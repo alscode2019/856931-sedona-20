@@ -1,5 +1,6 @@
 .map {
-  min-height: 350px;
+  max-height: 350px;
+  position: relative;
 
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -24,7 +25,29 @@
       background-image: url("../img/bg-map-desktop@2x.jpg");
     }
   }
+
+  &::after {
+    position: absolute;
+    content: " ";
+    height: 27px;
+    width: 27px;
+    background-image: url(../img/svg/map-marker.svg);
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 47%;
+
+    @media (min-width: 768px) {
+      bottom: 45%;
+    }
+
+    @media (min-width: 1200px) {
+      bottom: 46%;
+    }
+  }
 }
+
+
 
 .map__frame {
   width: 100%;

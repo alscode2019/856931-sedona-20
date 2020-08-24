@@ -117,9 +117,12 @@
 =======
 
         <picture class="advantages__page-picture">
-          <source type="image/webp" srcset="img/webp/main-city-mobile@1x.webp" />
 
-          <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" />
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-city-desktop@1x.webp 1x, img/webp/main-city-desktop@2x.webp 2x" />
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-city-tablet@1x.webp 1x, img/webp/main-city-tablet@2x.webp 2x" />
+          <source type="image/webp" srcset="img/webp/main-city-mobile@1x.webp 1x, img/webp/main-city-mobile@2x.webp 2x" />
+
+          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" />
           <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" />
           <img class="advantages__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города Седона">
         </picture>
@@ -171,9 +174,14 @@
 =======
 
         <picture class="advantages__page-picture advantages__page-picture--two">
+
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-bridge-desktop@1x.webp 1x, img/webp/main-bridge-desktop@2x.webp 2x" />
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-bridge-tablet@1x.webp 1x, img/webp/main-bridge-tablet@2x.webp 2x" />
+          <source type="image/webp" srcset="img/webp/main-bridge-mobile@1x.webp 1x, img/webp/main-bridge-mobile@2x.webp 2x" />
+
           <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" />
           <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" />
-          <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" alt="Фото моста дьявола">
+          <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото моста дьявола">
         </picture>
 
 >>>>>>> 5d9387f14744b1429b16f329fa4cc97abc1185e4
@@ -185,17 +193,17 @@
           <li class="advantages-others__item">
             <h3 class="advantages__title advantages__title--others">небольшая площадь</h3>
             <div class="advantages__number">&mdash;№3&mdash;</div>
-            <p class="advantages__description">все интересные места находятся очень близко</p>
+            <p class="advantages__description advantages__description--others">все интересные места находятся очень близко</p>
           </li>
           <li class="advantages-others__item">
             <h3 class="advantages__title advantages__title--others">красивая дорога</h3>
             <div class="advantages__number">&mdash;№4&mdash;</div>
-            <p class="advantages__description">ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="advantages__description advantages__description--others">ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-others__item">
             <h3 class="advantages__title advantages__title--others">мало туристов&nbsp;</h3>
             <div class="advantages__number">&mdash;№5&mdash;</div>
-            <p class="advantages__description">большинство едет в гранд каньон и толпится там</p>
+            <p class="advantages__description advantages__description--others">большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
