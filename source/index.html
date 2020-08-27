@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <!-- <link rel="preload" href="./css/style.min.css" as="style"> -->
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
 </head>
 
 
@@ -37,7 +41,7 @@
       </picture>
     </a>
 
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
 
       <ul class="site-list">
         <li class="site-list__item site-list__item--active">
@@ -104,16 +108,9 @@
           </div>
         </div>
 
-        <picture class="advantages__page-picture">
+        <div class="advantages__page-picture advantages__page-picture--city">
 
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-city-desktop@1x.webp 1x, img/webp/main-city-desktop@2x.webp 2x" />
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-city-tablet@1x.webp 1x, img/webp/main-city-tablet@2x.webp 2x" />
-          <source type="image/webp" srcset="img/webp/main-city-mobile@1x.webp 1x, img/webp/main-city-mobile@2x.webp 2x" />
-
-          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" />
-          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" />
-          <img class="advantages__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города Седона">
-        </picture>
+        </div>
 
       </div>
 
@@ -144,16 +141,9 @@
 
         </div>
 
-        <picture class="advantages__page-picture advantages__page-picture--two">
+        <div class="advantages__page-picture advantages__page-picture--bridge">
 
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-bridge-desktop@1x.webp 1x, img/webp/main-bridge-desktop@2x.webp 2x" />
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-bridge-tablet@1x.webp 1x, img/webp/main-bridge-tablet@2x.webp 2x" />
-          <source type="image/webp" srcset="img/webp/main-bridge-mobile@1x.webp 1x, img/webp/main-bridge-mobile@2x.webp 2x" />
-
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" />
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" />
-          <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото моста дьявола">
-        </picture>
+        </div>
 
       </div>
 
