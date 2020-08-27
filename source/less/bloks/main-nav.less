@@ -1,6 +1,9 @@
 .main-nav {
   text-align: center;
   position: relative;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .site-list {
@@ -15,7 +18,8 @@
 
   @media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
 }
@@ -61,16 +65,16 @@
       background-color: #ffffff;
     }
 
-    &:nth-child(2) {
-      margin-right: 155px;
+    &:nth-child(4n+2) {
+      margin-right: 156px;
     }
   }
 
   @media (min-width: 1200px) {
-    width: 239px;
+    width: 238px;
 
-    &:nth-child(2) {
-      margin-right: 245px;
+    &:nth-child(4n+2) {
+      margin-right: 247px;
     }
   }
 }

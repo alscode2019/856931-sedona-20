@@ -73,11 +73,15 @@
 }
 
 .page-main__header--index {
-  align-items: center;
   min-height: 389px;
+  display: block;
+  padding: 90px 20px 60px;
 
   background-image: url(../img/back-mobile.jpg);
   background-size: cover;
+
+  color: #ffffff;
+  text-align: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -85,7 +89,7 @@
 
   @media (min-width: 768px) {
     min-height: 519px;
-    align-items: flex-start;
+    padding-top: 77px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
@@ -107,11 +111,13 @@
 }
 
 .page-main__header-title {
-  /* padding: 0 20px;
-  padding-top: 5px; */
+  width: 282px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+
 
   @media (min-width: 768px) {
-    /* padding: 0 20px; */
+    width: 461px;
   }
 }
 
