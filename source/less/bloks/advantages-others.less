@@ -1,6 +1,9 @@
 .advantages-others {
   background-color: #EEEEEE;
   text-align: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .advantages-others__wrapper {
@@ -14,13 +17,6 @@
 
   @media (min-width: 768px) {
     padding: 0;
-    padding-top: 42px;
-    padding-bottom: 43px;
-
-  }
-
-  @media (min-width: 1200px) {
-    padding-bottom: 64px;
   }
 }
 
@@ -29,12 +25,6 @@
   border-bottom: solid 1px #D6D6D6;
   padding-bottom: 25px;
   margin-bottom: 25px;
-
-  @media (min-width: 768px) {
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
 
 
   &:last-child {
@@ -55,6 +45,23 @@
     }
   }
 }
+
+.advantages-others__item,
+.advantages-others__item:last-child {
+  @media (min-width: 768px) {
+    border: none;
+    margin: 0;
+    padding-top: 42px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 42px;
+    padding-bottom: 63px;
+  }
+}
+
+
 
 .advantages__description--others {
   padding: 0 6%;

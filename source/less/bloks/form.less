@@ -348,7 +348,11 @@
   &:focus {
     background-color: #ffffff;
     border: 4px solid #E5E5E5;
-    padding-left: 21px;
+    padding-left: 17px;
+
+    @media (min-width: 768px) {
+      padding-left: 18px;
+    }
   }
 }
 
@@ -383,9 +387,10 @@ textarea.letter-text::placeholder {
     justify-content: center;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 840px) {
     justify-content: flex-start;
   }
+
 }
 
 .form__item {
@@ -581,4 +586,9 @@ textarea.letter-text::placeholder {
 
 .form__input-invalid {
   border: 2px solid red;
+  padding-left: 19px;
+
+  @media (min-width: 768px) {
+    padding-left: 20px;
+  }
 }

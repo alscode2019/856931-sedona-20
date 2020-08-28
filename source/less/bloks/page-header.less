@@ -11,13 +11,15 @@
 
 .page-header__logo {
   position: absolute;
-  bottom: 15px;
+  bottom: -29px;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 50%);
+  transform: translateX(-50%);
   z-index: 90;
 
-  @media (min-width: 1200px) {
-    bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    top: 0px;
   }
 }

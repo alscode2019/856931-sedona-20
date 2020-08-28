@@ -3,9 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <!-- <link rel="preload" href="./css/style.min.css" as="style"> -->
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
 </head>
+
 
 <body class="page">
 
@@ -29,20 +35,16 @@
   <header class="page-header">
 
     <a href="index.html" class="page-header__logo">
-<<<<<<< HEAD
-      <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Город Седона">
-=======
       <picture>
         <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg" />
         <img src="img/svg/logotyle-mobile.svg" alt="Город Седона" width="102">
       </picture>
->>>>>>> 9a1dd67eec84121ad8305b4b892ae23b1e70ae35
     </a>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
 
       <ul class="site-list">
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a>
             Главная
           </a>
@@ -64,7 +66,6 @@
           </a>
         </li>
       </ul>
-
 
       <button class="main-nav__toggle" type="button">
 
@@ -106,28 +107,11 @@
             <p class="advantages-header__description">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
         </div>
-<<<<<<< HEAD
-        <div class="advantages__img-wrapper advantages__img-wrapper--first">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg" />
-            <source media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.jpg" />
-            <img class="advantages__img" src="./img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
-          </picture>
+
+        <div class="advantages__page-picture advantages__page-picture--city">
+
         </div>
-=======
 
-        <picture class="advantages__page-picture">
-
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-city-desktop@1x.webp 1x, img/webp/main-city-desktop@2x.webp 2x" />
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-city-tablet@1x.webp 1x, img/webp/main-city-tablet@2x.webp 2x" />
-          <source type="image/webp" srcset="img/webp/main-city-mobile@1x.webp 1x, img/webp/main-city-mobile@2x.webp 2x" />
-
-          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" />
-          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" />
-          <img class="advantages__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города Седона">
-        </picture>
-
->>>>>>> 5d9387f14744b1429b16f329fa4cc97abc1185e4
       </div>
 
       <div class="advantages__wrapper">
@@ -147,44 +131,20 @@
         </ul>
       </div>
 
-<<<<<<< HEAD
-      <div class="advantages__page">
-        <div class="advantages-header">
-          <div class="advantages-header__wrapper">
-            <h2 class="advantages-header__title">там есть мост дьявола</h2>
-=======
       <div class="advantages__page advantages__page--two">
         <div class="advantages-header advantages-header--two">
           <div class="advantages-header__wrapper advantages-header__wrapper--two">
             <h2 class="advantages-header__title">там есть <br>мост дьявола</h2>
->>>>>>> 5d9387f14744b1429b16f329fa4cc97abc1185e4
             <div class="advantages__number">&mdash; №2 &mdash; </div>
             <p class="advantages-header__description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
           </div>
 
         </div>
-<<<<<<< HEAD
-        <div class="advantages__img-wrapper">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.jpg" />
-            <source media="(min-width: 1200px)" srcset="./img/main-bridge-desktop@1x.jpg" />
-            <img class="advantages__img" src="./img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста дьявола">
-          </picture>
+
+        <div class="advantages__page-picture advantages__page-picture--bridge">
+
         </div>
-=======
 
-        <picture class="advantages__page-picture advantages__page-picture--two">
-
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/main-bridge-desktop@1x.webp 1x, img/webp/main-bridge-desktop@2x.webp 2x" />
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/main-bridge-tablet@1x.webp 1x, img/webp/main-bridge-tablet@2x.webp 2x" />
-          <source type="image/webp" srcset="img/webp/main-bridge-mobile@1x.webp 1x, img/webp/main-bridge-mobile@2x.webp 2x" />
-
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" />
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" />
-          <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото моста дьявола">
-        </picture>
-
->>>>>>> 5d9387f14744b1429b16f329fa4cc97abc1185e4
       </div>
 
       <div class="advantages-others">
@@ -269,16 +229,7 @@
       </div>
     </div>
   </footer>
-<<<<<<< HEAD
-<<<<<<< HEAD
-</body>
-=======
   <!-- подключаем скрипты -->
   <script type="text/javascript" src="./js/mobile-menu.js"></script>
->>>>>>> 5d9387f14744b1429b16f329fa4cc97abc1185e4
 
-</html>
-=======
 </body></html>
-
->>>>>>> 3f69df0e2c46e2fe4c5e84310f802cba2c14d6b9

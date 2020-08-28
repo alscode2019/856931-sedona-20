@@ -3,6 +3,14 @@
   padding: 36px 0 30px;
 }
 
+.page-footer--photo {
+  padding: 31px 0 30px;
+
+  @media (min-width: 768px) {
+    padding: 34px 60px 35px;
+  }
+}
+
 
 .page-footer--form {
   padding: 74px 0 30px;
@@ -12,10 +20,6 @@
 @media (min-width: 768px) {
   .page-footer--index {
     padding: 39px 60px;
-  }
-
-  .page-footer--photo {
-    padding: 34px 60px 35px;
   }
 
   .page-footer--form {
@@ -78,10 +82,15 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: 768px) {
     width: 150px;
   }
+}
+
+.social__item {
+  margin-bottom: 5px;
 }
 
 .social__link {
