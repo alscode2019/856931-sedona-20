@@ -1,7 +1,32 @@
 .intro {
+  position: relative;
   text-align: center;
   padding-top: 33px;
   padding-bottom: 32px;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 57px;
+    width: 100%;
+    top: -57px;
+    background-image: url(../img/svg/bg-intro-triangle-mobile.svg);
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: 768px) {
+      background-image: url(../img/svg/bg-intro-triangle-tablet.svg);
+    }
+
+    @media (min-width: 1200px) {
+      background-image: url(../img/svg/bg-intro-triangle-desktop.svg);
+    }
+
+  }
+
 
   @media (min-width: 768px) {
     padding-top: 43px;
@@ -15,7 +40,6 @@
 }
 
 .intro--main {
-  position: relative;
 
   &::after {
     content: " ";
