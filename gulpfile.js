@@ -11,9 +11,12 @@ const imagemin = require("gulp-imagemin"); // Оптимизация изобр�
 const webp = require("gulp-webp"); // Создаём WebP
 const svgstore = require("gulp-svgstore"); // SVG спрайт
 const del = require("del"); // Удаление
+const uglify = require("gulp-uglify"); // Минификация JS
+const posthtml = require("gulp-posthtml"); // Проверка HTML
+const htmlmin = require('gulp-htmlmin'); // Минификация  HTML
+const include = require("posthtml-include");
 
-
-// Styles
+// CSS
 
 const styles = () => {
   return gulp.src("source/less/style.less")
@@ -26,11 +29,32 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
+
+
+
+// BuildStyle
+
+const css = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+};
+
+exports.css = css;
 
 
 // Server
@@ -45,19 +69,19 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 exports.server = server;
 
-// Watcher
+ //Watcher
 
-const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("build/*.html").on("change", sync.reload);
-}
+ const watcher = () => {
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/*.html").on("change", sync.reload);
+};
 
 exports.default = gulp.series(
-  styles, server, watcher
+  css, server, watcher
 );
 
 
@@ -66,24 +90,11 @@ exports.default = gulp.series(
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-imagemin.optipng({
-        optimizationLevel: 3
-      }),
-imagemin.mozjpeg({
-        quality: 75,
-        progressive: true
-      }),
-imagemin.svgo({
-        plugins: [
-          {
-            removeViewBox: true
-          },
-          {
-            cleanupIDs: false
-          }
-        ]
-      })
-]));
+imagemin.optipng({ optimizationLevel: 3 }),
+imagemin.mozjpeg({ quality: 75, progressive: true }),
+imagemin.svgo()
+]))
+.pipe(gulp.dest("build/img"));
 };
 
 exports.images = images;
@@ -96,7 +107,7 @@ const createWebp = () => {
     .pipe(webp({
       quality: 80
     }))
-    .pipe(gulp.dest("source/img/webp"));
+    .pipe(gulp.dest("build/img/webp"));
 };
 exports.webp = createWebp;
 
@@ -107,10 +118,32 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 };
 exports.sprite = sprite;
 
+// Jsmin
+
+const jsmin = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/js"));
+};
+exports.jsmin = jsmin;
+
+
+// HTML
+
+const html = () => {
+  return gulp
+    .src("source/*.html")
+    .pipe(posthtml([include()]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+};
+exports.html = html;
 
 // Сlean
 
@@ -119,12 +152,12 @@ const clean = () => {
 };
 exports.clean = clean;
 
+
 // Copy
 
 const copy = () => {
   return gulp.src([
 "source/fonts/**/*.{woff,woff2}",
-"source/img/**",
 "source/js/**",
 "source/*.ico"
 
@@ -135,15 +168,39 @@ const copy = () => {
 };
 exports.copy = copy;
 
+
+/*gulp.task(
+  "build",
+  gulp.series("clean")
+);
+
+gulp.task("start", gulp.series("build", "server"));*/
+
+
 // Build
 
-/*const {
-  series
-} = gulp;
-
+const { series } = gulp;
 
 exports.build = series(
   clean,
   copy,
-  styles
-);*/
+  jsmin,
+  css,
+  images,
+  createWebp,
+  sprite,
+  html
+);
+
+exports.start = series(
+  clean,
+  copy,
+  jsmin,
+  css,
+  images,
+  createWebp,
+  sprite,
+  html,
+  server,
+  watcher
+);

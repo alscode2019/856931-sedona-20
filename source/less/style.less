@@ -1,8 +1,9 @@
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans'), local('PTSans-Regular'),
-    url('../fonts/ptsans.woff2') format('woff2'),
-    url('../fonts/ptsans.woff') format('woff');
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+    local("PTSans-Regular"),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 
   font-weight: 400;
   font-style: normal;
@@ -10,10 +11,11 @@
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans Bold'), local('PTSans-Bold'),
-    url('../fonts/ptsansbold.woff2') format('woff2'),
-    url('../fonts/ptsansbold.woff') format('woff');
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"),
+    local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 
   font-weight: 700;
   font-style: normal;
@@ -44,7 +46,6 @@
   padding: 0;
 
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -77,7 +78,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   text-decoration: none;
   border: none;
 
@@ -88,17 +89,17 @@ img {
   justify-content: center;
 
   &:hover {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
 
   &:active {
-    background-color: #5496BD;
+    background-color: #5496bd;
     color: fade(#ffffff, 30%);
   }
 }
 
 .disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 @import "./bloks/page-header.less";
