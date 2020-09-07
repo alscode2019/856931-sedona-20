@@ -6,33 +6,24 @@
   text-align: center;
 
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 50%;
-  /* margin-right: -50%; */
   transform: translateX(-50%);
+  z-index: 199;
+
+  bottom: 35%;
+
+  @media (min-width: 1200px) {
+    bottom: 30%;
+  }
 }
 
 .modal--filure {
   max-width: 400px;
-  bottom: 700px;
-
-  @media (min-width: 768px) {
-    bottom: 341px;
-  }
-
-  @media (min-width: 1200px) {
-    bottom: 228px;
-  }
 }
 
 .modal--success {
-
   max-width: 640px;
-  bottom: 331px;
-
-  @media (min-width: 768px) {
-    bottom: 502px;
-  }
 }
 
 .modal__content-wrapper {
