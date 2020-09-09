@@ -118,6 +118,10 @@
     fill: #333333;
   }
 
+  &:focus {
+    fill: #333333;
+  }
+
   &:active {
     fill: fade(#333333, 30%);
   }
@@ -125,7 +129,12 @@
   @media (min-width: 768px) {
     fill: #ffffff;
 
+
     &:hover {
+      fill: fade(#ffffff, 60%);
+    }
+
+    &:focus {
       fill: fade(#ffffff, 60%);
     }
 

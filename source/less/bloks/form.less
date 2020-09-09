@@ -515,6 +515,10 @@ textarea.letter-text::placeholder {
   &:active::before {
     background-color: #d5d5d5;
   }
+
+  &:focus::before {
+    outline: 1px solid #aba9a9;
+  }
 }
 
 .form__radio-label {
@@ -585,6 +589,14 @@ textarea.letter-text::placeholder {
   padding: 10px 20px;
   min-height: 160px;
 
+  &:focus::-moz-placeholder {
+    opacity: 0;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
   @media (min-width: 768px) {
     padding-top: 17px;
   }
@@ -621,7 +633,7 @@ textarea.letter-text::placeholder {
 }
 
 .form__input-invalid {
-  border: 2px solid red;
+  outline: 2px solid red;
   padding-left: 19px;
 
   @media (min-width: 768px) {
