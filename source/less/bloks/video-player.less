@@ -114,11 +114,11 @@
   outline: none;
   fill: #5c6870;
 
-  &:focus {
-    outline: 1px solid #5c6870;
+  &:hover {
+    fill: #333333;
   }
 
-  &:hover {
+  &:focus {
     fill: #333333;
   }
 
@@ -129,16 +129,17 @@
   @media (min-width: 768px) {
     fill: #ffffff;
 
+
     &:hover {
+      fill: fade(#ffffff, 60%);
+    }
+
+    &:focus {
       fill: fade(#ffffff, 60%);
     }
 
     &:active {
       fill: fade(#ffffff, 30%);
-    }
-
-    &:focus {
-      outline: 1px solid #e5e5e5;
     }
   }
 }
