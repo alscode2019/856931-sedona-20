@@ -1,13 +1,14 @@
-<<<<<<< HEAD
+
 body {
   background: #ffffff;
 }
-=======
+
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans'), local('PTSans-Regular'),
-    url('../fonts/ptsans.woff2') format('woff2'),
-    url('../fonts/ptsans.woff') format('woff');
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+    local("PTSans-Regular"),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 
   font-weight: 400;
   font-style: normal;
@@ -15,10 +16,11 @@ body {
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: local('PT Sans Bold'), local('PTSans-Bold'),
-    url('../fonts/ptsansbold.woff2') format('woff2'),
-    url('../fonts/ptsansbold.woff') format('woff');
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"),
+    local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 
   font-weight: 700;
   font-style: normal;
@@ -49,7 +51,6 @@ body {
   padding: 0;
 
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -75,19 +76,10 @@ img {
   /* height: auto; */
 }
 
-<<<<<<< HEAD
-@import "page-header.less";
-@import "main-nav.less";
-@import "intro.less";
-@import "advantages.less";
-@import "advantages-others.less";
-@import "search.less";
-@import "map.less";
-@import "page-footer.less";
-@import "photo.less";
-@import "video-presentation.less";
->>>>>>> 216f5ca8a5499bf89a3653ac3ec1053534262260
-=======
+a {
+  text-decoration: none;
+}
+
 .button {
   color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -95,7 +87,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   text-decoration: none;
   border: none;
 
@@ -106,21 +98,26 @@ img {
   justify-content: center;
 
   &:hover {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
 
   &:active {
-    background-color: #5496BD;
+    background-color: #5496bd;
     color: fade(#ffffff, 30%);
+  }
+
+  &:focus {
+    outline: 1px solid blue;
   }
 }
 
 .disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 @import "./bloks/page-header.less";
 @import "./bloks/main-nav.less";
+@import "./bloks/site-list.less";
 @import "./bloks/page-main.less";
 @import "./bloks/intro.less";
 @import "./bloks/advantages.less";
@@ -128,16 +125,9 @@ img {
 @import "./bloks/search.less";
 @import "./bloks/map.less";
 @import "./bloks/page-footer.less";
+@import "./bloks/social.less";
 @import "./bloks/photo.less";
 @import "./bloks/video-presentation.less";
+@import "./bloks/video-player.less";
 @import "./bloks/form.less";
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-
->>>>>>> feaa76f65349ea89af78efdff9d6914d2fde32f7
-=======
->>>>>>> 3f69df0e2c46e2fe4c5e84310f802cba2c14d6b9
-=======
 @import "./bloks/modal.less";
->>>>>>> 5d9387f14744b1429b16f329fa4cc97abc1185e4
