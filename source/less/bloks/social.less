@@ -1,0 +1,43 @@
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    width: 150px;
+  }
+}
+
+.social__item {
+  margin-bottom: 5px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    & .social__link-icon {
+      fill: fade(#ffffff, 30%);
+    }
+  }
+
+  &:focus {
+    outline: 1px solid blue;
+  }
+}
+
+.social__link-icon {
+  fill: #ffffff;
+}

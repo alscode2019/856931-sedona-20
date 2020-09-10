@@ -36,7 +36,7 @@ form.addEventListener("submit", function (evt) {
   evt.preventDefault();
   success.classList.add("modal__show");
   filure.classList.remove("modal__show");
-
+  document.getElementById("form").reset(); // Очистка формы
 });
 
 
@@ -56,6 +56,16 @@ successClose.addEventListener("click", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
+    evt.preventDefault();
+    filure.classList.remove("modal__show");
+    success.classList.remove("modal__show");
+  }
+});
+
+
+// Закрываем по ENTER
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 13) {
     evt.preventDefault();
     filure.classList.remove("modal__show");
     success.classList.remove("modal__show");

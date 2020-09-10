@@ -1,0 +1,145 @@
+.video-player {
+  position: relative;
+}
+
+.video-player__controls-panel {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 0 20px;
+  bottom: -68px;
+
+  @media (min-width: 768px) {
+    bottom: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 20px;
+    padding-right: 26px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 25px;
+  }
+}
+
+.video-player__controls-range {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: fade(#000000, 60%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    width: 68%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 74%;
+  }
+}
+
+.video-player__range {
+  margin: 0;
+
+  height: 3px;
+  width: 84%;
+  background-color: fade(#ffffff, 20%);
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 95%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 96%;
+  }
+
+  &::-webkit-slider-thumb {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &::-moz-range-thumb {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+}
+
+.video-player__controls {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding-left: 25px;
+
+  background-color: #f2f2f2;
+
+  @media (min-width: 768px) {
+    height: 93px;
+    padding-left: 0;
+    background-color: transparent;
+  }
+}
+
+.video-player__controls--subtitles {
+  padding-left: 34px;
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-player__controls--replay {
+    order: -1;
+  }
+}
+
+.video-player__button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: inherit;
+  outline: none;
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:focus {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: fade(#333333, 30%);
+  }
+
+  @media (min-width: 768px) {
+    fill: #ffffff;
+
+
+    &:hover {
+      fill: fade(#ffffff, 60%);
+    }
+
+    &:focus {
+      fill: fade(#ffffff, 60%);
+    }
+
+    &:active {
+      fill: fade(#ffffff, 30%);
+    }
+  }
+}
