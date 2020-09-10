@@ -36,7 +36,7 @@ form.addEventListener("submit", function (evt) {
   evt.preventDefault();
   success.classList.add("modal__show");
   filure.classList.remove("modal__show");
-
+  document.getElementById("form").reset(); // Очистка формы
 });
 
 
@@ -49,7 +49,6 @@ filureClose.addEventListener("click", function (evt) {
 successClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   success.classList.remove("modal__show");
-  document.getElementById("form").reset();
 });
 
 

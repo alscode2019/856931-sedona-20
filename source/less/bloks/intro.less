@@ -8,16 +8,18 @@
     content: " ";
     position: absolute;
     background-position: center bottom;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 57px;
+    height: 62px;
     width: 100%;
-    top: -57px;
+    top: -62px;
     background-image: url("../img/svg/bg-intro-triangle-mobile.svg");
     left: 50%;
     transform: translateX(-50%);
 
     @media (min-width: 768px) {
+      height: 57px;
+      top: -57px;
       background-image: url("../img/svg/bg-intro-triangle-tablet.svg");
     }
 
