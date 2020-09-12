@@ -48,12 +48,18 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Фото и видео города Седона</h1>
-    <div class="page-main__header">
+    <section class="page-main__header">
+     <h2 class="visually-hidden"> Сайт города Седона приветствует вас</h2>
       <picture class="page-main__header-img-wrapper">
         <source media="(min-width: 320px)" srcset="./img/svg/sedona-big.svg" />
         <img src="./img/svg/SEDONA.svg" width="229" alt="Sedona">
       </picture>
-    </div>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.png" />
+        <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.png" />
+        <img class="page-main__header-decor" src="img/bg-intro-triangle-mobile.png" width="282" alt="Добро пожаловать в великолепие">
+      </picture>
+    </section>
     <section class="intro intro--page">
       <h2 class="intro__title intro__title--page">
         Фото и видео
