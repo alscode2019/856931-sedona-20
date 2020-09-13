@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.copyright__text {
+  margin-right: 12px;
+}
+
+.copyright__link {
+  &:hover {
+    & path {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    & path {
+      fill: fade(#000000, 30%);
+    }
+  }
+
+  &:focus {
+    outline: 1px solid #81b3d2;
+  }
+}
